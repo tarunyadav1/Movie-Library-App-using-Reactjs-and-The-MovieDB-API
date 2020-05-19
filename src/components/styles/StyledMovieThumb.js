@@ -58,3 +58,73 @@ export const StyledMovieThumb = styled.div`
     }
   }
 `;
+
+export const Title = styled.h2`
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: var(--color-primary-light);
+  margin-bottom: 1rem;
+  line-height: 1.4;
+  transition: color 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+
+  ${StyledMovieThumb}:hover & {
+    color: var(--text-color);
+  }
+`;
+
+export const DetailsWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 3rem;
+`;
+
+export const RatingsWrapper = styled.div`
+  display: flex;
+  position: relative;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  color: var(--color-primary);
+
+  ${StyledMovieThumb}:hover & {
+    color: var(--color-primary-lighter);
+  }
+`;
+
+export const Tooltip = styled.span`
+  visibility: hidden;
+  opacity: 0;
+  width: 120px;
+  font-weight: 500;
+  font-size: 1.1rem;
+  background-color: var(--color-primary-light);
+  color: var(--text-color);
+  text-align: center;
+  border-radius: 6px;
+  padding: 1rem;
+  position: absolute;
+  z-index: 999;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -60px;
+  transition: all 200ms cubic-bezier(0.645, 0.045, 0.355, 1);
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    transition: all 200ms cubic-bezier(0.645, 0.045, 0.355, 1);
+    border-color: var(--color-primary-light) transparent transparent transparent;
+  }
+
+  ${RatingsWrapper}:hover & {
+    visibility: visible;
+    opacity: 1;
+  }
+`;

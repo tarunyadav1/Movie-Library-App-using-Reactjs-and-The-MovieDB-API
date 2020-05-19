@@ -49,7 +49,22 @@ const Home = () => {
     fetchMovies(endpoint);
   };
 
-  if (error) return <div>Somethings went wrong</div>;
+  if (error)
+    return (
+      <div
+        style={{
+          color: "red",
+          fontSize: 35,
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          height: "100vh",
+        }}
+      >
+        {" "}
+        NETWORK ERROR, Please try after some time 😥
+      </div>
+    );
 
   if (!movies[0]) return <Spinner />;
 
@@ -66,6 +81,9 @@ const Home = () => {
       <Grid header={searchTerm ? "Search Result" : "Popular Movies "}>
         {movies.map((movie) => (
           <MovieThumb
+            title={movie.title}
+            rating={movie.vote_average}
+            count={movie.vote_count}
             key={movie.id}
             clickable
             image={

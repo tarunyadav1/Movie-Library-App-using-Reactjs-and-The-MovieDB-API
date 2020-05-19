@@ -6,8 +6,6 @@ export const useHomeFetch = ({ searchTerm }) => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
 
-  // console.log(state);
-
   const fetchMovies = async (endpoint) => {
     setError(false);
     setLoading(true);
@@ -16,7 +14,7 @@ export const useHomeFetch = ({ searchTerm }) => {
 
     try {
       const result = await (await fetch(endpoint)).json();
-      // console.log(result);
+
       setState((prev) => ({
         ...prev,
         movies:
@@ -31,7 +29,6 @@ export const useHomeFetch = ({ searchTerm }) => {
       }));
     } catch (error) {
       setError(true);
-      // console.log(error);
     }
 
     setLoading(false);

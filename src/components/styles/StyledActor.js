@@ -1,12 +1,17 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const StyledActor = styled.div`
-  font-family: 'Abel', sans-serif;
+  font-family: "Abel", sans-serif;
   color: #fff;
   background: #1c1c1c;
   border-radius: 20px;
+  transition: all 0.3s;
   padding: 5px;
+  overflow: hidden;
   text-align: center;
+  &:hover {
+    transform: scale(1.03);
+  }
 
   img {
     display: block;
@@ -14,6 +19,11 @@ export const StyledActor = styled.div`
     height: 200px;
     object-fit: cover;
     border-radius: 15px;
+
+    transition: all 3s ease-in-out;
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 
   .actor-name {

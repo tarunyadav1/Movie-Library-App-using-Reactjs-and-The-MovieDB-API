@@ -25,7 +25,8 @@ export const StyledHeroImage = styled.div`
   }
 
   .heroimage-text {
-    font-family: "DM Mono", monospace;
+    font-family: "Abel", sans-serif;
+
     z-index: 100;
     max-width: 700px;
     position: absolute;
@@ -36,7 +37,7 @@ export const StyledHeroImage = styled.div`
     color: #fff;
 
     h1 {
-      font-family: "DM Mono", monospace;
+      font-family: "Abel", sans-serif;
 
       font-size: 48px;
       color: #fff;
@@ -48,7 +49,8 @@ export const StyledHeroImage = styled.div`
     }
 
     p {
-      font-family: "DM Mono", monospace;
+      font-family: "Abel", sans-serif;
+
       font-size: 22px;
       line-height: 26px;
       color: #fff;
