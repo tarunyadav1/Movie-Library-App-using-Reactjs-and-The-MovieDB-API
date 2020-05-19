@@ -30,12 +30,13 @@ export const StyledHeader = styled.div`
 
 export const StyledRMDBLogo = styled.img`
   width: 100px;
+  height: 70px;
 
   margin-top: 0px;
 
   @media screen and (max-width: 500px) {
     width: 100px;
-    height: 5px;
+    height: 30px;
     margin-top: 5px;
   }
 `;
