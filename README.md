@@ -2,7 +2,7 @@
 
   
 
-## [Check it live here]()
+## [Check it live here](https://movielib.netlify.app/)
 
   ![project image](https://i.ibb.co/cJQvg9S/smartmockups-kadjctvn.png)
 
