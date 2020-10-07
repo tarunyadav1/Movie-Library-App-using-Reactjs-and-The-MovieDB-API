@@ -15,7 +15,7 @@ import MovieThumb from "./elements/MovieThumb";
 import LoadMoreBtn from "./elements/LoadMoreBtn";
 import Spinner from "./elements/Spinner";
 
-//custom hooks
+// custom hooks
 import { useHomeFetch } from "./hooks/useHomeFetch";
 
 import NoImage from "./images/no_image.jpg";
@@ -39,9 +39,8 @@ const Home = () => {
   };
 
   const loadMoreMovie = () => {
-    const searchEndpoint = `${SEARCH_BASE_URL}${searchTerm}&page=${
-      currentPage + 1
-    }`;
+    const searchEndpoint = `${SEARCH_BASE_URL}${searchTerm}&page=${currentPage + 1
+      }`;
     const popularEndpoint = `${POPULAR_BASE_URL}&page=${currentPage + 1}`;
 
     const endpoint = searchTerm ? searchEndpoint : popularEndpoint;

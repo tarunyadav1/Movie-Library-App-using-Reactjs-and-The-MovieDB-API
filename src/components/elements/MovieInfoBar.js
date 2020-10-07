@@ -40,4 +40,5 @@ MovieInfoBar.propTypes = {
   budget: PropTypes.number,
   revenue: PropTypes.number,
 };
+
 export default MovieInfoBar;

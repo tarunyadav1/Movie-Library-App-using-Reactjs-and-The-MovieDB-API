@@ -14,7 +14,6 @@ export const StyledHeroImage = styled.div`
   background-repeat: no-repeat;
   width: 100%;
   height: 600px;
-
   position: relative;
   animation: animateHeroimage 1s;
 
@@ -26,7 +25,6 @@ export const StyledHeroImage = styled.div`
 
   .heroimage-text {
     font-family: "Abel", sans-serif;
-
     z-index: 100;
     max-width: 700px;
     position: absolute;
@@ -38,7 +36,6 @@ export const StyledHeroImage = styled.div`
 
     h1 {
       font-family: "Abel", sans-serif;
-
       font-size: 48px;
       color: #fff;
 
@@ -50,7 +47,6 @@ export const StyledHeroImage = styled.div`
 
     p {
       font-family: "Abel", sans-serif;
-
       font-size: 22px;
       line-height: 26px;
       color: #fff;
