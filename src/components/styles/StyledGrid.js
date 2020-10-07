@@ -7,7 +7,6 @@ export const StyledGrid = styled.div`
   h1 {
     font-family: "Abel", sans-serif;
     font-size: 42px;
-
     @media screen and (max-width: 768px) {
       font-size: 22px;
     }
@@ -18,9 +17,7 @@ export const StyledGridContent = styled.div`
   display: grid;
   grid-template-columns: repeat(5, minmax(100px, 1fr));
   grid-gap: 40px;
-
   position: relative;
-
   .grid-element {
     animation: animateGrid 0.5s;
   }

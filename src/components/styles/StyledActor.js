@@ -19,7 +19,6 @@ export const StyledActor = styled.div`
     height: 200px;
     object-fit: cover;
     border-radius: 15px;
-
     transition: all 3s ease-in-out;
     &:hover {
       transform: scale(1.1);

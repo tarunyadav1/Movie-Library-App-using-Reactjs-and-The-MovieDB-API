@@ -21,4 +21,5 @@ MovieThumnail.propTypes = {
   movieId: PropTypes.number,
   clickable: PropTypes.bool,
 };
+
 export default MovieThumnail;
