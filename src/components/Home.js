@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import {
   SEARCH_BASE_URL,
   POPULAR_BASE_URL,
@@ -12,7 +12,6 @@ import HeroImage from "./elements/HeroImage";
 import SearchBar from "./elements/SearchBar";
 import Grid from "./elements/Grid";
 import MovieThumb from "./elements/MovieThumb";
-import LoadMoreBtn from "./elements/LoadMoreBtn";
 import Spinner from "./elements/Spinner";
 
 //custom hooks
@@ -22,29 +21,58 @@ import NoImage from "./images/no_image.jpg";
 
 const Home = () => {
   const [searchTerm, setSearchTerm] = useState("");
+  const searchTermRef = useRef(searchTerm);
   const [
     {
-      state: { movies, currentPage, totalPages, heroImage },
+      state: { movies, heroImage },
       loading,
       error,
+      currentPageRef,
+      loadingRef,
+      totalPagesRef,
     },
     fetchMovies,
   ] = useHomeFetch(searchTerm);
+
+  const useMountEffect = (func) => useEffect(func, []);
+
+  useMountEffect(() => {
+    window.addEventListener("scroll", handleWindowScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleWindowScroll);
+    };
+  });
+
+  const handleWindowScroll = () => {
+    const endOfPage =
+      Math.round(window.innerHeight + document.documentElement.scrollTop) ===
+      Math.round(document.scrollingElement.scrollHeight);
+
+    if (
+      endOfPage &&
+      currentPageRef.current < totalPagesRef.current &&
+      !loadingRef.current
+    ) {
+      loadMoreMovies();
+    }
+  };
 
   const searchMovies = (search) => {
     const endpoint = search ? SEARCH_BASE_URL + search : POPULAR_BASE_URL;
 
     setSearchTerm(search);
+    searchTermRef.current = search;
     fetchMovies(endpoint);
   };
 
-  const loadMoreMovie = () => {
-    const searchEndpoint = `${SEARCH_BASE_URL}${searchTerm}&page=${
-      currentPage + 1
-    }`;
-    const popularEndpoint = `${POPULAR_BASE_URL}&page=${currentPage + 1}`;
+  const loadMoreMovies = () => {
+    const searchEndpoint = `${SEARCH_BASE_URL}${searchTermRef.current}&page=${currentPageRef.current + 1
+      }`;
+    const popularEndpoint = `${POPULAR_BASE_URL}&page=${currentPageRef.current + 1
+      }`;
 
-    const endpoint = searchTerm ? searchEndpoint : popularEndpoint;
+    const endpoint = searchTermRef.current ? searchEndpoint : popularEndpoint;
 
     fetchMovies(endpoint);
   };
@@ -98,9 +126,6 @@ const Home = () => {
       </Grid>
 
       {loading && <Spinner />}
-      {currentPage < totalPages && !loading && (
-        <LoadMoreBtn text="Load More" callback={loadMoreMovie}></LoadMoreBtn>
-      )}
     </>
   );
 };
