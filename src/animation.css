@@ -1,0 +1,130 @@
+
+  .igloo {
+    position: relative;
+    top: -10rem;
+    width: 360px;
+    height: 520px;
+    overflow: hidden;
+    transform: scale(0.8);
+  }
+  
+  /* .igloo::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -100px;
+    width: 100%;
+    height: 120px;
+    background: #000;
+    z-index: 2;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    transform: scalex(1.5);
+  }
+   */
+   h3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 400%;
+    height: 200%;
+    background: linear-gradient(to right, transparent, rgb(139, 8, 8), rgb(139, 8, 8)); height: 100px; width: 75rem;
+    z-index: 2;
+    animation: animate 8s ease-in .1ms forwards;
+  }
+  
+  .logo {
+    height: 120px;
+    position: relative;
+    margin-bottom: -7.5rem;
+  }
+/* 
+  h3 {
+      width: 100%;
+  } */
+
+  @keyframes animate {
+    0% {
+      right: 0;
+    }
+
+    100% {
+      right: -400%;
+    }
+  }
+
+
+  /* .igloo span {
+    position: absolute;
+    top: 100px;
+    width: 80px;
+    height: 100%;
+    background: #918c8c;
+    left: 8rem;
+    transition: background 2s ease-in ;
+  } */
+ 
+  /* .logo:hover .igloo span{
+    background-color: #fff;
+  } */
+  
+
+  @keyframes slide {
+    0% {
+      top: 50px;
+    }
+    100% {
+      top: -15px;
+    }
+  }
+
+  .ball {
+      left: 6.3rem;
+      top: -10rem;
+      height: 30px;
+      position: absolute;
+      width: 30px;
+      border-radius: 50%;
+      background-color: white;
+  }
+
+  .logo:hover .ball {
+    animation-name: slide;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: .5ms;
+    animation-iteration-count: infinite;
+  }  
+
+  .balls {
+    left: 6.3rem;
+    top: -10rem;
+    height: 30px;
+    position: absolute;
+    width: 30px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.logo:hover .balls {
+    animation-name: slide;
+    animation-duration: 8s;
+    animation-timing-function: ease-in-out;
+    animation-delay: .10ms;
+    animation-iteration-count: infinite;
+  }  
+
+  h3 {
+    position: relative;
+    margin-top: -38rem;
+    padding: 0;
+    text-align: center;
+    font-family: arial;
+    color: white;
+    font-size: 35px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    overflow: hidden;
+    transition: background 5s ease-in-out 1s;
+  }

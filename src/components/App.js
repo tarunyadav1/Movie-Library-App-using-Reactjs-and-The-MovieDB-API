@@ -5,10 +5,12 @@ import Header from "../components/elements/Header";
 import Home from "./Home";
 import Movie from "../components/Movie";
 import NotFound from "../components/NotFound";
+import Animation from "./Animation"
 
 const App = () => (
   <>
     <Header></Header>
+    <Animation></Animation>
     <Router>
       <Home path="/" />
       <Movie path="/:movieId"></Movie>
