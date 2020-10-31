@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   sodipodi:docname="LOGO2.svg"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   id="svg878"
+   version="1.1"
+   viewBox="0 0 189.85567 203.03381"
+   height="203.03381mm"
+   width="189.85567mm">
+  <defs
+     id="defs872">
+    <rect
+       id="rect1528"
+       height="75.619572"
+       width="99.614244"
+       y="102.59249"
+       x="-78.263296" />
+  </defs>
+  <sodipodi:namedview
+     inkscape:window-maximized="1"
+     inkscape:window-y="-11"
+     inkscape:window-x="-11"
+     inkscape:window-height="1000"
+     inkscape:window-width="1920"
+     showgrid="false"
+     inkscape:document-rotation="0"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="mm"
+     inkscape:cy="439.99455"
+     inkscape:cx="394.2588"
+     inkscape:zoom="0.36388287"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base" />
+  <metadata
+     id="metadata875">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(-3.9002771,-45.150699)"
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Calque 1">
+    <rect
+       ry="2.5443444"
+       y="121.70833"
+       x="12.851191"
+       height="123.97619"
+       width="178.40475"
+       id="rect1441"
+       style="fill:#db2d42;fill-opacity:1;stroke:#db2d42;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke" />
+    <rect
+       transform="rotate(-14.545655)"
+       style="fill:#db2d42;fill-opacity:1;stroke:#db2d42;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       id="rect1441-4"
+       width="178.55275"
+       height="23.894356"
+       x="-17.115358"
+       y="91.000549"
+       ry="0.4903802" />
+    <text
+       transform="scale(0.97604827,1.0245395)"
+       id="text1473"
+       y="161.14362"
+       x="100.89632"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50.5495px;line-height:1.25;font-family:'MV Boli';-inkscape-font-specification:'MV Boli, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.26374"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50.5495px;font-family:'MV Boli';-inkscape-font-specification:'MV Boli, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;stroke-width:1.26374"
+         y="161.14362"
+         x="100.89632"
+         id="tspan1471"
+         sodipodi:role="line">Movie</tspan><tspan
+         id="tspan1475"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50.5495px;font-family:'MV Boli';-inkscape-font-specification:'MV Boli, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;stroke-width:1.26374"
+         y="224.33049"
+         x="100.89632"
+         sodipodi:role="line">Library</tspan></text>
+    <text
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect1528);fill:#000000;fill-opacity:1;stroke:none;"
+       id="text1526"
+       xml:space="preserve" />
+  </g>
+</svg>
